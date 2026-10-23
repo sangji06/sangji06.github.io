@@ -1,0 +1,10 @@
+# Language proficiency labels and illustrative display lengths; percentages are not displayed.
+- name: Korean
+  level: Native
+  fill: 100
+- name: English
+  level: Professional
+  fill: 85
+- name: Japanese
+  level: Intermediate
+  fill: 50
