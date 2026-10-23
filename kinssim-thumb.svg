@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="320" viewBox="0 0 480 320">
+<rect width="480" height="320" fill="#f9fafc"/>
+<text x="26" y="46" fill="#a95422" font-family="Arial,sans-serif" font-size="16" font-weight="700">MULTI-TURN AGENT EVALUATION</text>
+<rect x="30" y="90" width="157" height="44" rx="9" fill="#e9eef5"/><rect x="63" y="144" width="148" height="44" rx="9" fill="#fff0e8"/>
+<text x="50" y="117" fill="#526072" font-family="Arial,sans-serif" font-size="16">Question 1</text><text x="85" y="171" fill="#a95422" font-family="Arial,sans-serif" font-size="16">Follow-up</text>
+<path d="M220 145 H269" stroke="#d17b49" stroke-width="3"/><path d="m260 136 10 9-10 9" fill="none" stroke="#d17b49" stroke-width="3"/>
+<rect x="283" y="99" width="169" height="112" rx="12" fill="white" stroke="#d4dee9" stroke-width="2"/>
+<text x="368" y="136" text-anchor="middle" fill="#4f6070" font-family="Arial,sans-serif" font-size="17" font-weight="bold">LLM agent</text><text x="368" y="167" text-anchor="middle" fill="#a95422" font-family="Arial,sans-serif" font-size="15">Evidence + decision</text>
+<text x="30" y="269" fill="#8a95a5" font-family="Arial,sans-serif" font-size="16">K-InsSim · workflow sketch</text>
+</svg>
