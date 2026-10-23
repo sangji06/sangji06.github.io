@@ -1,0 +1,11 @@
+title: Sangji Lee
+url: "https://sangji06.github.io"
+baseurl: ""
+markdown: kramdown
+# The site uses a custom local layout, not a remote theme.
+exclude:
+  - README.md
+  - README-KR.md
+  - ACKNOWLEDGEMENTS.md
+  - Gemfile
+  - Gemfile.lock

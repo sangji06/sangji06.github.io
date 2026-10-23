@@ -1,0 +1,20 @@
+name: Sangji Lee
+email: geedons@gmail.com
+last_updated: Oct 2026
+photo: /assets/images/profile.jpg
+photo_alt: Temporary profile image — replace with your photo
+cv: /assets/files/Sangji_Lee_CV.pdf
+links:
+  scholar: https://scholar.google.com/citations?user=et6bjwMAAAAJ
+  github: https://github.com/sangji06
+  linkedin: https://www.linkedin.com/in/sangji06/
+  advisor: https://smarthealthlab.skku.edu/
+introduction:
+- Hello! I am a <strong>medical AI researcher</strong> at <strong>Samsung Medical Center</strong>. I received my M.S. in Digital Health
+  from Sungkyunkwan University under the supervision of <a class="advisor-link" href="https://smarthealthlab.skku.edu/" rel="noopener
+  noreferrer" target="_blank"><strong>Prof. Won Chul Cha</strong></a>.
+- My research interests lie in <strong>developing and evaluating AI systems for real-world healthcare workflows.</strong> I am especially
+  interested in how AI agents can leverage complex patient information and domain-specific knowledge to support a wide range of healthcare
+  tasks. I am also interested in designing benchmarks and evaluation methods that reflect real-world healthcare tasks and assess the
+  reliability and practical utility of AI systems.
+- I am always happy to connect with people interested in my research or potential collaborations. Feel free to reach out!

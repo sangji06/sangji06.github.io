@@ -1,0 +1,140 @@
+- id: clever
+  status: under_review
+  selected: true
+  title: 'Matching Coding Functions to Computational Mechanisms: The CLEVER Framework for Automated Clinical Coding'
+  authors:
+  - name: Sangji Lee
+    me: true
+    equal_contribution: false
+  - name: Won Chul Cha
+    me: false
+    equal_contribution: false
+  venue: JAMIA Open · Revised manuscript under review · 2026
+  thumbnail: /assets/images/clever-thumb.svg
+  alt: Illustrative CLEVER workflow thumbnail
+  note: ''
+- id: kinssim
+  status: under_review
+  selected: true
+  title: 'K-InsSim: Benchmarking LLM Agents on Evolving Inquiries in Health Insurance Consultation'
+  authors:
+  - name: Yeonsu Kwon
+    me: false
+    equal_contribution: true
+  - name: Sangji Lee
+    me: true
+    equal_contribution: true
+  - name: Jiho Kim
+    me: false
+    equal_contribution: false
+  - name: Jungmi Sul
+    me: false
+    equal_contribution: false
+  - name: Hansol Chang
+    me: false
+    equal_contribution: false
+  - name: Hyeyoon Moon
+    me: false
+    equal_contribution: false
+  - name: Won Chul Cha
+    me: false
+    equal_contribution: false
+  - name: Taerim Kim
+    me: false
+    equal_contribution: false
+  - name: Edward Choi
+    me: false
+    equal_contribution: false
+  venue: ACL Rolling Review · Under review · October 2026 cycle
+  thumbnail: /assets/images/kinssim-thumb.svg
+  alt: Illustrative K-InsSim workflow thumbnail
+  note: '* Equal contribution (co-first authors).'
+- id: ehr-neurips
+  status: published
+  selected: false
+  title: 'Towards Error-Free EHRs: Reasoning-Intensive Consistency Verification Between Clinical Notes and Structured Tables in Electronic
+    Health Records'
+  authors:
+  - name: Yeonsu Kwon
+    me: false
+    equal_contribution: false
+  - name: Jiho Kim
+    me: false
+    equal_contribution: false
+  - name: Junseong Choi
+    me: false
+    equal_contribution: false
+  - name: Paloma Rabaey
+    me: false
+    equal_contribution: false
+  - name: Minseo Kim
+    me: false
+    equal_contribution: false
+  - name: Sujeong Im
+    me: false
+    equal_contribution: false
+  - name: Jeewon Yang
+    me: false
+    equal_contribution: false
+  - name: Jun-Min Lee
+    me: false
+    equal_contribution: false
+  - name: Sangji Lee
+    me: true
+    equal_contribution: false
+  - name: Jiwon Kim
+    me: false
+    equal_contribution: false
+  - name: Hangyul Yoon
+    me: false
+    equal_contribution: false
+  - name: Hyunwook Kwon
+    me: false
+    equal_contribution: false
+  - name: Edward Choi
+    me: false
+    equal_contribution: false
+  venue: NeurIPS 2026 · Evaluations & Datasets Track · Accepted
+  thumbnail: null
+  alt: ''
+  note: ''
+- id: ner-jamia
+  status: published
+  selected: false
+  title: 'Span-based annotation framework for LLM-based clinical named entity recognition: development and validation using Korean emergency
+    department notes'
+  authors:
+  - name: Eunhye Jang
+    me: false
+    equal_contribution: false
+  - name: Javier Aguirre
+    me: false
+    equal_contribution: false
+  - name: Sangji Lee
+    me: true
+    equal_contribution: false
+  - name: Hyeyoon Moon
+    me: false
+    equal_contribution: false
+  - name: Won Chul Cha
+    me: false
+    equal_contribution: false
+  venue: JAMIA Open, 8(6) · 2025
+  thumbnail: null
+  alt: ''
+  note: ''
+- id: mie-kcd
+  status: published
+  selected: false
+  title: 'Optimizing Automated KCD Coding: A Retrieval-Verification Approach'
+  authors:
+  - name: Sangji Lee
+    me: true
+    equal_contribution: false
+  - name: Won Chul Cha
+    me: false
+    equal_contribution: false
+  venue: Studies in Health Technology and Informatics, 327, 872–873 · Medical Informatics Europe 2025 (oral presentation)
+  thumbnail: null
+  alt: ''
+  note: ''

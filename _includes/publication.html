@@ -1,0 +1,11 @@
+<article class="pub{% unless include.paper.thumbnail %} compact{% endunless %}">
+  {% if include.paper.thumbnail %}
+  <img class="thumb" src="{{ include.paper.thumbnail | relative_url }}" alt="{{ include.paper.alt }}" width="210" height="150">
+  {% endif %}
+  <div class="paper-content">
+    <h3>{{ include.paper.title }}</h3>
+    <p class="authors">{% for author in include.paper.authors %}{% if author.me %}<strong>{% endif %}{{ author.name }}{% if author.equal_contribution %}*{% endif %}{% if author.me %}</strong>{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+    <p class="venue">{{ include.paper.venue }}</p>
+    {% if include.paper.note != '' %}<p class="contrib">{{ include.paper.note }}</p>{% endif %}
+  </div>
+</article>

@@ -1,271 +1,82 @@
-<!DOCTYPE html>
-
-<html lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width,initial-scale=1" name="viewport"/>
-<meta content="#ffffff" name="theme-color"/>
-<meta content="Sangji Lee — research in clinical NLP and AI for healthcare" name="description"/>
-<title>Sangji Lee — Academic Homepage</title>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<style>
-:root { --orange: #d65e1a; --ink:#222; --muted:#62666e; --faint:#8c9096; --line:#ededed; --width: 782px; }
-*{box-sizing:border-box} html {scroll-behavior:smooth;scroll-padding-top:80px;background:#fff;color-scheme:light} body{margin:0;background:#fff;color:var(--ink);font:15px/1.65 'DM Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
-a{color:inherit;text-decoration:none}a:hover{color:var(--orange)}.wrap{max-width:var(--width);width:calc(100% - 52px);margin:0 auto}
-.site-header{background:#fff;border-bottom:1px solid var(--line)}.site-header .wrap{padding:22px 0;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:700;font-size:14px;letter-spacing:-.025em}.brand b{color:var(--orange)}nav{display:flex;align-items:center;gap:24px;font-size:12.5px;color:#575b63}
-.hero{display:flex;align-items:center;justify-content:space-between;gap:42px;padding:66px 0 42px}.intro{min-width:0;flex:1}.eyebrow{margin:0 0 9px;color:var(--orange);font-size:10px;letter-spacing:.15em;font-weight:700;text-transform:uppercase}h1{font-size:38px;font-weight:600;letter-spacing:-.052em;line-height:1.2;margin:0 0 13px}h1 span{color:var(--orange)}.summary{color:#5d626a;line-height:1.8;max-width:565px;font-size:15px;margin:0}.smalllinks{display:flex;gap:18px;flex-wrap:wrap;margin-top:18px;font-size:12.5px;color:var(--orange);font-weight:600}.smalllinks a{border-bottom:1px solid #eeb18e;padding-bottom:2px}.photo{width:134px;height:148px;flex:0 0 134px;object-fit:cover;border-radius:8px;border:1px solid #e9e9e9;background:white}
-.section{padding:25px 0 34px}h2{font-size:21px;letter-spacing:-.03em;margin:0 0 20px;line-height:1.4;font-weight:600}h2::before{content:'';display:inline-block;width:19px;height:2px;background:var(--orange);vertical-align:middle;margin-right:12px}.section-note{font-size:12.5px;color:var(--faint);margin:-10px 0 19px}.subhead{margin:27px 0 13px;color:#767b82;font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
-.pub{display:flex;align-items:flex-start;gap:20px;padding:15px 0 21px;border-bottom:1px solid var(--line)}.pub:first-of-type{padding-top:3px}.thumb{width:114px;height:82px;object-fit:cover;border:1px solid #e4e4e4;border-radius:5px;flex:0 0 114px;background:#fff}.paper-content{min-width:0}.pub h3{font-size:15px;font-weight:600;line-height:1.44;letter-spacing:-.01em;margin:0 0 3px}.authors{font-size:13.1px;color:#4f545b;line-height:1.5;margin:0}.authors strong{color:#222;font-weight:700}.venue{font-size:12.8px;color:#757a81;font-style:italic;margin:2px 0 0}.contrib{font-size:11.7px;color:#858a90;margin:4px 0 0}.paper-links{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:8px}.paper-links a{border:1px solid #dfdfdf;border-radius:3px;padding:2px 9px;font-size:11px;font-weight:600;color:#333}.paper-links a:hover{border-color:var(--orange);color:var(--orange)}.pub.compact{padding:15px 0 19px}.pub.compact .paper-content{width:100%}
-.background p{margin:0 0 9px;font-size:14.5px;color:#5b6068;max-width:820px}.background strong{color:#292b2d;font-weight:600}.background p:last-child{margin-bottom:0}
-footer{border-top:1px solid var(--line);padding:23px 0 32px;margin-top:35px;color:#858a8f;font-size:12px}.footer-wrap{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.footer-links{display:flex;gap:17px}
-@media(max-width:640px){.wrap{width:calc(100% - 34px)}.site-header .wrap{padding:17px 0;align-items:flex-start;flex-direction:column;gap:7px}nav{gap:15px;flex-wrap:wrap}.hero{padding:45px 0 28px;gap:18px}.photo{width:105px;height:119px;flex:0 0 105px}h1{font-size:31px}.summary{font-size:13.5px}.pub{gap:12px}.thumb{width:92px;height:75px;flex:0 0 92px}.pub h3{font-size:13.7px}.authors{font-size:12.3px}.venue{font-size:12px}.section{padding:23px 0 28px}}
-@media(max-width:440px){.hero{align-items:flex-start}.photo{width:86px;height:99px;flex:0 0 86px}.eyebrow{font-size:9px}h1{font-size:29px}.summary{font-size:13px;line-height:1.7}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-
-/* v8: simple selected works / full publications pages */
-.pub:last-of-type{border-bottom:0}
-.more-pubs{display:inline-flex;align-items:center;gap:8px;color:var(--orange);border-bottom:1px solid #edb38e;font-weight:600;font-size:13px;padding:0 0 4px;margin-top:19px}
-.more-pubs:hover{border-color:var(--orange)}
-.page-intro{padding:57px 0 16px}
-.page-intro h1{font-size:32px;letter-spacing:-.035em;margin:0 0 6px}
-.page-intro p{font-size:14px;color:var(--muted);margin:0}
-.back-link{display:inline-block;color:var(--orange);font-size:12px;font-weight:600;margin-bottom:16px}
-.paper-group-title{font-size:12px;text-transform:uppercase;letter-spacing:.085em;font-weight:700;color:#777b80;margin:30px 0 0}
-.paper-group-title + .pub{padding-top:19px}
-.pub-compact-only{display:block}
-@media(max-width:640px){.page-intro{padding:39px 0 9px}.page-intro h1{font-size:27px}}
-
-
-/* v9: compact news and larger research thumbnails */
-.news{padding-top:11px;padding-bottom:27px}
-.news-list{display:flex;flex-direction:column;gap:13px}
-.news-item{display:grid;grid-template-columns:86px minmax(0,1fr);gap:18px;align-items:start}
-.news-date{font-weight:600;font-size:12.6px;white-space:nowrap;color:var(--orange);padding-top:1px}
-.news-item p{margin:0;font-size:13.6px;line-height:1.65;color:#51565d}
-.news-item strong{font-weight:600;color:#27292b}
-.thumb{width:158px;height:112px;flex:0 0 158px;object-fit:contain}
-.pub{gap:23px;padding:18px 0 23px}
-.interests p{font-size:14px;color:#565b63;line-height:1.85;max-width:790px;margin:0}
-.concise .detail-line{display:flex;align-items:baseline;justify-content:space-between;gap:18px;padding:10px 0;border-bottom:1px solid var(--line)}
-.concise .detail-line:last-child{border-bottom:0}
-.detail-main{display:flex;flex-direction:column;gap:1px}
-.detail-main strong{font-size:13.8px;font-weight:600;color:#2c3034}
-.detail-main span{font-size:12.8px;color:#777c82}
-.detail-time{color:#858a90;font-size:12px;white-space:nowrap}
-@media(max-width:640px){.news-item{grid-template-columns:70px minmax(0,1fr);gap:12px}.news-item p{font-size:12.9px}.news-date{font-size:12px}.thumb{width:118px;height:88px;flex-basis:118px}.pub{gap:15px}}
-@media(max-width:440px){.concise .detail-line{align-items:flex-start;flex-direction:column;gap:2px}.detail-time{order:-1;font-size:11px}.thumb{width:102px;height:82px;flex-basis:102px}}
-
-/* v10: more focused column, stronger imagery and icon-only social links */
-:root { --width:782px; }
-.hero { gap:35px; padding-top:61px; padding-bottom:45px; }
-.photo { width:168px; height:185px; flex:0 0 168px; border-radius:8px; }
-.social-links { display:flex; align-items:center; gap:9px; margin-top:22px; flex-wrap:wrap; }
-.social-link { color:#51565b; width:37px; height:37px; border:1px solid #e7e7e7; border-radius:8px; display:inline-flex; align-items:center; justify-content:center; transition:color .15s,border-color .15s,background .15s; }
-.social-link svg { width:20px; height:20px; display:block; }
-.social-link:hover,.social-link:focus-visible { color:var(--orange); background:#fff8f3; border-color:#e9b59b; outline-offset:3px; }
-.news-list { gap:16px; }
-.news-item { grid-template-columns:81px 23px minmax(0,1fr); gap:13px; align-items:start; }
-.news-icon { width:21px; height:21px; margin-top:0px; color:var(--orange); }
-.news-date { padding-top:2px; }
-.pub { gap:23px; }
-.thumb { width:185px; height:132px; flex:0 0 185px; }
-@media(max-width:640px) {
- .hero { gap:20px; padding:42px 0 28px; }
- .photo { width:126px; height:141px; flex:0 0 126px; }
- .thumb { width:134px; height:100px; flex:0 0 134px; }
- .news-item { grid-template-columns:70px 20px minmax(0,1fr); gap:10px; }
- .news-icon { width:18px; height:18px; }
- .social-link { width:35px; height:35px; }
-}
-@media(max-width:440px) {
- .photo { width:105px; height:119px; flex:0 0 105px; }
- .thumb { width:106px; height:82px; flex:0 0 106px; }
- .news-item { grid-template-columns:66px 18px minmax(0,1fr); gap:9px; }
- .news-icon { width:17px; height:17px; }
- .news-date { font-size:11px; }
- .social-link { width:33px; height:33px; }
- .social-link svg { width:18px; height:18px; }
-}
-
-/* v11 refinements: smaller reading column, larger typography, borderless profile links */
-:root { --width:720px; }
-body { font-size:16.5px; line-height:1.67; }
-.site-header .wrap { padding:23px 0; }
-.brand { font-size:15.5px; }
-nav { font-size:14px; gap:20px; }
-.hero { gap:31px; }
-h1 { font-size:39px; }
-.summary { font-size:16.6px; line-height:1.78; }
-.social-links { gap:22px; margin-top:21px; }
-.social-link { width:auto; height:auto; min-width:24px; border:0; background:transparent; border-radius:0; padding:1px 0; color:#535a61; line-height:1; transition:color .15s ease, transform .15s ease; }
-.social-link svg { width:23px; height:23px; }
-.social-link.scholar svg { width:26px; height:26px; }
-.social-link.cv { letter-spacing:-.055em; }
-.cv-glyph { font:700 15px/1.1 'DM Sans',Arial,sans-serif; letter-spacing:-.07em; }
-.social-link:hover, .social-link:focus-visible { background:transparent; border:0; color:var(--orange); outline-offset:4px; transform:translateY(-1px); }
-.section { padding:27px 0 35px; }
-h2 { font-size:23px; }
-.news-list { gap:15px; }
-.news-item { grid-template-columns:84px minmax(0,1fr); gap:13px; }
-.news-date { font-size:13.3px; padding-top:1px; }
-.news-item p { font-size:15.3px; line-height:1.64; }
-.news-emoji { margin-left:5px; white-space:nowrap; font-size:18px; }
-.pub { gap:21px; padding:19px 0 24px; }
-.pub h3 { font-size:17px; line-height:1.44; margin-bottom:6px; }
-.authors { font-size:14.7px; line-height:1.58; }
-.venue { font-size:14px; margin-top:5px; }
-.contrib { font-size:13.3px; }
-.more-pubs { font-size:14.5px; }
-.concise .detail-line { padding:12px 0; }
-.detail-main strong { font-size:15.5px; }
-.detail-main span { font-size:14.3px; }
-.detail-time { font-size:13.5px; }
-.page-intro h1 { font-size:34px; }
-.page-intro p { font-size:15.5px; }
-.back-link { font-size:13.5px; }
-.paper-group-title { font-size:13px; }
-footer { font-size:13px; }
-@media(max-width:640px) {
-  body { font-size:15.4px; }
-  .brand {font-size:15px;} nav{font-size:13.3px;gap:14px;}
-  .summary { font-size:14.8px; }
-  h1{font-size:32px;} h2{font-size:21px;}
-  .social-links{gap:17px;}
-  .social-link{min-width:22px;} .social-link svg{width:22px;height:22px;}
-  .social-link.scholar svg{width:25px;height:25px;}
-  .news-item{grid-template-columns:75px minmax(0,1fr);gap:11px;}
-  .news-item p{font-size:14.6px;line-height:1.65;} .news-date{font-size:12.6px;}
-  .pub h3{font-size:15.7px;} .authors{font-size:14px;} .venue{font-size:13.4px;}
-  .contrib{font-size:12.5px;} .detail-main strong{font-size:14.8px;}
-  .detail-main span{font-size:13.8px;} .detail-time{font-size:12.8px;}
-  .thumb {width:122px;height:96px;flex:0 0 122px;}
-  .paper-group-title{font-size:12.5px;}
-}
-@media(max-width:440px) {
-  .hero{gap:18px;}
-  .photo{width:105px;height:119px;flex:0 0 105px;}
-  .news-item{grid-template-columns:69px minmax(0,1fr);gap:10px;}
-  .news-date{font-size:12.1px;}
-  .news-item p{font-size:14px;}
-  .thumb{width:103px;height:83px;flex:0 0 103px;}
-  .pub h3{font-size:15px;} .authors{font-size:13.6px;}
-  .venue{font-size:13px;}
-  .social-links{gap:15px;}
-}
-
-/* v12: Google Scholar symbol provided by the site owner; preserve the exact black g + cap graphic. */
-.social-link.scholar img {
-  width:28px; height:28px; display:block; object-fit:contain;
-  margin:-2px -2px; /* optical alignment with adjacent 23px icons */
-}
-@media (max-width:640px) {
-  .social-link.scholar img { width:27px; height:27px; margin:-2px -2px; }
-}
-
-
-/* v14: fuller introduction and aligned profile photo; responsive reading width */
-.hero { display:flow-root; padding-top:60px; padding-bottom:40px; }
-.intro {display:block; min-width:0;}
-.hero .photo {float:right; margin:6px 0 14px 27px;}
-.summary {max-width:none; font-size:16.6px; line-height:1.78;}
-.summary p {margin:0 0 13px;}
-.summary p:last-child {margin-bottom:0;}
-.social-links {margin-top:23px;}
-/* Preserve the exact supplied Google Scholar symbol, with CSS-driven color on hover. */
-.social-link.scholar .scholar-icon {
-  display:block; width:28px; height:28px; flex:0 0 28px;
-  background-color:currentColor;
-  -webkit-mask-image:url("google-scholar-icon.png");
-  mask-image:url("google-scholar-icon.png");
-  -webkit-mask-position:center; mask-position:center;
-  -webkit-mask-repeat:no-repeat; mask-repeat:no-repeat;
-  -webkit-mask-size:contain; mask-size:contain;
-}
-@media(max-width:640px){
-  .hero{padding:43px 0 32px;}
-  .hero .photo{float:right;margin:4px 0 12px 18px;}
-  .summary{font-size:14.8px;line-height:1.76;}
-  .summary p{margin-bottom:13px;}
-  .social-link.scholar .scholar-icon{width:27px;height:27px;flex-basis:27px;}
-}
-@media(max-width:440px){
-  .hero .photo {width:102px;height:116px;margin-left:15px;}
-  .summary{font-size:14.5px;}
-}
-
-/* v15: simplified header, larger imagery, inline SVG Scholar that always shows offline */
-.site-header .wrap { justify-content: flex-end; }
-.hero .photo { width:198px; height:220px; margin:5px 0 17px 26px; }
-.thumb { width:210px; height:150px; flex:0 0 210px; }
-.social-link.scholar .scholar-svg {display:block; width:26px; height:26px; flex:none; overflow:visible;}
-@media (max-width:640px) {
-  .hero .photo { width:140px; height:156px; margin:4px 0 13px 16px; }
-  .thumb { width:148px; height:108px; flex:0 0 148px; }
-  .social-link.scholar .scholar-svg {width:25px;height:25px;}
-}
-@media (max-width:440px) {
-  .hero .photo {width:114px;height:127px; margin:4px 0 12px 13px;}
-  .thumb {width:116px;height:89px;flex:0 0 116px;}
-}
-
-/* v16: visible email address, underlined advisor hover, balanced Scholar icon */
-.contact-area{margin-top:22px;}
-.email-address{display:inline-flex;align-items:center;gap:9px;color:#535a61;font-size:15px;font-weight:500;line-height:1.55;transition:color .15s ease;}
-.email-address svg{width:18px;height:18px;display:block;flex:0 0 18px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;}
-.email-address:hover,.email-address:focus-visible{color:var(--orange);}
-.contact-area .social-links{margin-top:11px;gap:22px;}
-.advisor-link{color:inherit;text-decoration:underline;text-decoration-color:#dedede;text-underline-offset:3px;transition:color .15s ease,text-decoration-color .15s ease;}
-.advisor-link:hover,.advisor-link:focus-visible{color:var(--orange);text-decoration-color:var(--orange);}
-.social-link.scholar .scholar-svg{width:22px;height:22px;}
-@media(max-width:640px){
- .email-address{font-size:14px;}
- .contact-area .social-links{gap:18px;}
- .social-link.scholar .scholar-svg{width:21px;height:21px;}
-}
-</style>
-</head>
-<body>
-<header class="site-header"><div class="wrap"><nav aria-label="Main navigation"><a href="#news">News</a><a href="#publications">Publications</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#honors">Honors</a></nav></div></header>
+---
+layout: default
+title: Home
+---
 <main class="wrap" id="top">
-<section aria-label="Introduction" class="hero"><img alt="Temporary profile image — replace with your photo" class="photo" height="220" src="profile.jpg" width="198"/><div class="intro"><h1>Sangji Lee<span>.</span></h1><div class="summary"><p>Hello! I am a <strong>medical AI researcher</strong> at <strong>Samsung Medical Center</strong>. I received my M.S. in Digital Health from Sungkyunkwan University under the supervision of <a class="advisor-link" href="https://smarthealthlab.skku.edu/" target="_blank" rel="noopener noreferrer"><strong>Prof. Won Chul Cha</strong></a>.</p><p>My research interests lie in <strong>developing and evaluating AI systems for real-world healthcare workflows.</strong> I am especially interested in how AI agents can leverage complex patient information and domain-specific knowledge to support a wide range of healthcare tasks. I am also interested in designing benchmarks and evaluation methods that reflect real-world healthcare tasks and assess the reliability and practical utility of AI systems.</p><p>I am always happy to connect with people interested in my research or potential collaborations. Feel free to reach out!</p></div><div class="contact-area"><a class="email-address" href="mailto:geedons@gmail.com" aria-label="Send an email to geedons@gmail.com" title="Email"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="m3.5 6 8.5 7 8.5-7"></path></svg><span>geedons@gmail.com</span></a>
-<div aria-label="Profile links" class="social-links">
-<a aria-label="CV PDF" class="social-link cv" href="Sangji_Lee_CV.pdf" rel="noopener noreferrer" target="_blank" title="CV"><span aria-hidden="true" class="cv-glyph">CV</span></a>
-<a aria-label="Google Scholar" class="social-link scholar" href="https://scholar.google.com/citations?user=et6bjwMAAAAJ" rel="noopener noreferrer" target="_blank" title="Google Scholar"><svg aria-hidden="true" class="scholar-svg" viewbox="31 44 229 236" xmlns="http://www.w3.org/2000/svg"><path d="M248 50 137 50 38 112 105 112 106 113 105 114 105 119 104 120 104 130 105 131 105 136 106 137 106 140 108 143 108 145 110 147 112 151 116 155 117 155 122 159 126 160 129 162 132 162 133 163 138 163 139 164 149 164 150 165 150 177 156 184 156 187 155 188 150 188 149 189 139 189 138 190 133 190 132 191 128 191 127 192 124 192 123 193 118 194 110 198 104 203 103 203 98 209 95 215 95 217 94 218 94 223 93 224 94 236 95 237 96 242 99 247 107 255 116 260 118 260 121 262 128 263 129 264 135 264 136 265 158 265 159 264 169 263 170 262 178 260 181 258 183 258 185 256 191 253 199 245 204 236 204 234 206 230 206 226 207 225 207 213 206 212 206 208 202 199 195 191 195 190 175 173 172 168 172 163 173 161 191 144 191 143 195 138 195 136 197 133 197 130 198 129 198 108 197 107 197 103 196 102 196 100 194 96 191 93 217 73 219 74 219 101 215 104 215 105 213 107 213 110 212 111 212 125 213 126 213 129 218 135 222 136 223 137 229 136 235 131 236 129 236 126 237 125 237 111 236 110 236 107 234 105 234 104 230 101 230 64Z M116 214 125 204 136 198 138 198 142 196 147 196 148 195 161 195 162 196 166 196 167 197 172 198 178 201 186 208 191 217 191 229 186 238 180 244 179 244 174 248 170 249 167 251 159 252 158 253 143 253 142 252 138 252 132 249 130 249 128 247 125 246 117 238 114 232 114 229 113 228 113 223 114 222 114 219 115 218Z M140 88 143 88 144 87 149 87 150 88 153 88 159 91 167 99 167 100 171 105 173 112 174 113 174 115 175 116 175 121 176 122 176 131 175 132 175 136 174 137 173 142 167 150 160 154 150 154 142 150 132 139 127 127 127 123 126 122 126 109 127 108 127 105 128 104 129 99 131 97 131 96 138 89Z" fill="currentColor" fill-rule="evenodd"></path></svg></a>
-<a aria-label="GitHub" class="social-link" href="https://github.com/sangji06" rel="noopener noreferrer" target="_blank" title="GitHub"><svg aria-hidden="true" fill="currentColor" viewbox="0 0 24 24"><path d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.77-.24.77-.54v-2.1c-3.14.68-3.8-1.33-3.8-1.33-.51-1.3-1.26-1.65-1.26-1.65-1.03-.71.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.73 2.65 1.23 3.29.94.1-.73.4-1.23.72-1.51-2.51-.29-5.15-1.25-5.15-5.54 0-1.22.44-2.22 1.16-3-.12-.29-.5-1.42.11-2.96 0 0 .95-.31 3.08 1.15a10.7 10.7 0 0 1 5.6 0c2.13-1.46 3.08-1.15 3.08-1.15.61 1.54.23 2.67.11 2.96.72.78 1.16 1.78 1.16 3 0 4.3-2.65 5.25-5.17 5.53.41.35.77 1.02.77 2.06v3.06c0 .3.2.65.78.54A11.2 11.2 0 0 0 12 .8Z"></path></svg></a>
-<a aria-label="LinkedIn" class="social-link" href="https://www.linkedin.com/in/sangji06/" rel="noopener noreferrer" target="_blank" title="LinkedIn"><svg aria-hidden="true" fill="currentColor" viewbox="0 0 24 24"><path d="M20.5 2.6H3.5a.9.9 0 0 0-.9.9v17a.9.9 0 0 0 .9.9h17a.9.9 0 0 0 .9-.9v-17a.9.9 0 0 0-.9-.9ZM8.2 18.5H5.6V10h2.6ZM6.9 8.8a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm11.6 9.7h-2.6v-4.1c0-1-.02-2.2-1.34-2.2-1.33 0-1.54 1.05-1.54 2.13v4.17h-2.6V10h2.5v1.17h.04c.35-.66 1.21-1.35 2.48-1.35 2.66 0 3.15 1.75 3.15 4.02Z"></path></svg></a>
-</div></div></div></section>
-<section aria-labelledby="news-title" class="section news" id="news">
-<h2 id="news-title">News</h2>
-<div class="news-list">
-<div class="news-item"><time class="news-date" datetime="2026-09">Sep 2026</time><p>Named an <strong>Alternate Candidate</strong> for the Fulbright Graduate Student Program. <span aria-hidden="true" class="news-emoji">🏅</span></p></div>
-<div class="news-item"><time class="news-date" datetime="2026-02">Feb 2026</time><p>Graduated with an <strong>M.S. in Digital Health</strong> from Sungkyunkwan University. <span aria-hidden="true" class="news-emoji">🎓</span></p></div>
-<div class="news-item"><time class="news-date" datetime="2025-05">May 2025</time><p>Presented work on automated KCD coding at <strong>Medical Informatics Europe (MIE) 2025</strong>. <span aria-hidden="true" class="news-emoji">🎤</span></p></div>
-</div>
-</section>
-<section class="section" id="publications">
-<h2>Publications</h2>
-<!-- Both thumbnail SVGs are illustrative placeholders; replace with authorized paper figures when available. -->
-<article class="pub"><img alt="Illustrative CLEVER workflow thumbnail" class="thumb" height="150" src="clever-thumb.svg" width="210"/><div class="paper-content"><h3>Matching Coding Functions to Computational Mechanisms: The CLEVER Framework for Automated Clinical Coding</h3><p class="authors"><strong>Sangji Lee</strong> and Won Chul Cha</p><p class="venue">JAMIA Open · Revised manuscript under review · 2026</p></div></article>
-<article class="pub"><img alt="Illustrative K-InsSim workflow thumbnail" class="thumb" height="150" src="kinssim-thumb.svg" width="210"/><div class="paper-content"><h3>K-InsSim: Benchmarking LLM Agents on Evolving Inquiries in Health Insurance Consultation</h3><p class="authors">Yeonsu Kwon*, <strong>Sangji Lee</strong>*, Jiho Kim, Jungmi Sul, Hansol Chang, Hyeyoon Moon, Won Chul Cha, Taerim Kim, and Edward Choi</p><p class="venue">ACL Rolling Review · Under review · October 2026 cycle</p><p class="contrib">* Equal contribution (co-first authors).</p></div></article>
-<a aria-label="View all publications" class="more-pubs" href="publications.html">View all publications <span aria-hidden="true">→</span></a>
-</section>
-<section class="section concise" id="experience">
-<h2>Experience</h2>
-<div class="detail-line"><div class="detail-main"><strong>Samsung Medical Center</strong><span>Researcher · Healthcare Digital Transformation Research Institute</span></div><span class="detail-time">Mar 2026 – Present</span></div>
-<div class="detail-line"><div class="detail-main"><strong>Severance Hospital</strong><span>Health Information Manager · Department of Medical Records</span></div><span class="detail-time">2022 – 2023</span></div>
-</section>
-<section class="section concise" id="education">
-<h2>Education</h2>
-<div class="detail-line"><div class="detail-main"><strong>Sungkyunkwan University</strong><span>M.S. in Digital Health</span></div><span class="detail-time">2024 – 2026</span></div>
-<div class="detail-line"><div class="detail-main"><strong>Dankook University</strong><span>B.S. in Public Health</span></div><span class="detail-time">2018 – 2022</span></div>
-</section>
-<section class="section concise" id="honors">
-<h2>Honors &amp; Awards</h2>
-<div class="detail-line"><div class="detail-main"><strong>Honorable Mention</strong><span>HIRA Healthcare Big Data &amp; AI Competition</span></div><span class="detail-time">2026</span></div>
-<div class="detail-line"><div class="detail-main"><strong>Outstanding Research Achievement Scholarship</strong><span>Sungkyunkwan University</span></div><span class="detail-time">2025</span></div>
-<div class="detail-line"><div class="detail-main"><strong>Dean’s Award</strong><span>College of Health Sciences, Dankook University</span></div><span class="detail-time">2022</span></div>
-</section>
-</main><footer><div class="wrap footer-wrap"><span>Last updated: Oct 2026</span></div></footer>
-</body></html>
+  <section aria-label="Introduction" class="hero">
+    <aside class="portrait-panel" aria-label="Profile and contact information">
+      <img class="photo" src="{{ site.data.profile.photo | relative_url }}" alt="{{ site.data.profile.photo_alt }}" width="198" height="220">
+      <div class="contact-area">
+        <span class="email-address" aria-label="Email: {{ site.data.profile.email | replace: '@', ' at ' }}"><svg class="email-solid" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect x="3" y="7" width="26" height="19" rx="4.5" fill="currentColor"></rect><path d="M5.5 10.5 16 18.5 26.5 10.5" fill="none" stroke="#ffffff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>{{ site.data.profile.email | replace: '@', ' [at] ' }}</span></span>
+        {% include social-links.html %}
+      </div>
+    </aside>
+    <div class="intro">
+      <h1>{{ site.data.profile.name }}<span>.</span></h1>
+      <div class="summary">{% for paragraph in site.data.profile.introduction %}<p>{{ paragraph }}</p>{% endfor %}</div>
+    </div>
+  </section>
+
+  <section class="section news" id="news" aria-labelledby="news-title">
+    <h2 id="news-title">News</h2>
+    <div class="news-list">
+      {% for news in site.data.news %}
+      <div class="news-item"><time class="news-date" datetime="{{ news.date }}">{{ news.label }}</time><p>{{ news.description }}&nbsp;<span class="news-emoji" aria-hidden="true">{{ news.emoji }}</span></p></div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="section" id="publications" aria-labelledby="publications-title">
+    <div class="publications-heading">
+      <h2 id="publications-title">Publications</h2>
+      <div class="publication-tabs" role="tablist" aria-label="Choose publications to display">
+        <button type="button" class="publication-tab active" id="pub-tab-selected" role="tab" aria-selected="true" aria-controls="pub-panel-selected" tabindex="0">Selected</button>
+        <button type="button" class="publication-tab" id="pub-tab-all" role="tab" aria-selected="false" aria-controls="pub-panel-all" tabindex="-1">All</button>
+      </div>
+    </div>
+    <div id="pub-panel-selected" class="publication-panel" role="tabpanel" aria-labelledby="pub-tab-selected" tabindex="0">
+      {% for paper in site.data.publications %}{% if paper.selected %}
+        {% include publication.html paper=paper %}
+      {% endif %}{% endfor %}
+    </div>
+    <div id="pub-panel-all" class="publication-panel" role="tabpanel" aria-labelledby="pub-tab-all" tabindex="0" hidden>
+      {% for paper in site.data.publications %}
+        {% include publication.html paper=paper %}
+      {% endfor %}
+      <a class="more-pubs" href="{{ '/publications.html' | relative_url }}">Open publications page <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  <section class="section" id="patent" aria-labelledby="patent-title">
+    <h2 id="patent-title">Patent</h2>
+    {% for patent in site.data.patents %}
+    <article class="patent-item">
+      <h3>{{ patent.title }}</h3>
+      <p class="authors">{% for inventor in patent.inventors %}{% if inventor.me %}<strong>{% endif %}{{ inventor.name }}{% if inventor.me %}</strong>{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+      <p class="venue">No. {{ patent.number }} · {{ patent.year }}</p>
+    </article>
+    {% endfor %}
+  </section>
+
+  <section class="section concise" id="experience"><h2>Experience</h2>
+    {% for job in site.data.experience %}
+    <div class="detail-line"><div class="detail-main"><strong>{{ job.institution }}</strong><span>{{ job.role }}</span></div><span class="detail-time">{{ job.period }}</span></div>
+    {% endfor %}
+  </section>
+  <section class="section concise" id="education"><h2>Education</h2>
+    {% for degree in site.data.education %}
+    <div class="detail-line"><div class="detail-main"><strong>{{ degree.institution }}</strong><span>{{ degree.degree }}</span></div><span class="detail-time">{{ degree.period }}</span></div>
+    {% endfor %}
+  </section>
+  <section class="section concise" id="honors"><h2>Honors &amp; Awards</h2>
+    {% for honor in site.data.honors %}
+    <div class="detail-line"><div class="detail-main"><strong>{{ honor.award }}</strong><span>{{ honor.issuer }}</span></div><span class="detail-time">{{ honor.year }}</span></div>
+    {% endfor %}
+  </section>
+  <section class="section concise" id="teaching" aria-labelledby="teaching-title">
+    <h2 id="teaching-title">Teaching Assistant</h2>
+    {% for course in site.data.teaching %}
+    <div class="detail-line"><div class="detail-main"><strong>{{ course.title }}</strong><span>{{ course.institution }}</span></div><span class="detail-time">{{ course.year }}</span></div>
+    {% endfor %}
+  </section>
+</main>
