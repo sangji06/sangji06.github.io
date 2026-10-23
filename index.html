@@ -10,6 +10,15 @@ title: Home
         <span class="email-address" aria-label="Email: {{ site.data.profile.email | replace: '@', ' at ' }}"><svg class="email-solid" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect x="3" y="7" width="26" height="19" rx="4.5" fill="currentColor"></rect><path d="M5.5 10.5 16 18.5 26.5 10.5" fill="none" stroke="#ffffff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>{{ site.data.profile.email | replace: '@', ' [at] ' }}</span></span>
         {% include social-links.html %}
       </div>
+      <section class="language-panel" aria-labelledby="languages-title">
+        <h2 class="language-heading" id="languages-title">Languages</h2>
+        {% for language in site.data.languages %}
+        <div class="language-item">
+          <div class="language-label"><span class="language-name">{{ language.name }}</span><span class="language-level">{{ language.level }}</span></div>
+          <div class="language-track" aria-hidden="true"><span class="language-fill" style="width:{{ language.fill }}%"></span></div>
+        </div>
+        {% endfor %}
+      </section>
     </aside>
     <div class="intro">
       <h1>{{ site.data.profile.name }}<span>.</span></h1>
