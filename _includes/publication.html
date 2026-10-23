@@ -1,6 +1,6 @@
 <article class="pub{% unless include.paper.thumbnail %} compact{% endunless %}">
   {% if include.paper.thumbnail %}
-  <img class="thumb" src="{{ include.paper.thumbnail | relative_url }}" alt="{{ include.paper.alt }}" width="210" height="150">
+  <img class="thumb" src="{{ include.paper.thumbnail | relative_url }}" alt="{{ include.paper.alt }}" loading="lazy" decoding="async">
   {% endif %}
   <div class="paper-content">
     <h3>{{ include.paper.title }}</h3>
