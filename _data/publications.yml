@@ -10,7 +10,7 @@
     me: false
     equal_contribution: false
   venue: JAMIA Open · Revised manuscript under review · 2026
-  thumbnail: /assets/images/clever-thumb.svg
+  thumbnail: /assets/images/clever.png
   alt: Illustrative CLEVER workflow thumbnail
   note: ''
 - id: kinssim
@@ -46,7 +46,7 @@
     me: false
     equal_contribution: false
   venue: ACL Rolling Review · Under review · October 2026 cycle
-  thumbnail: /assets/images/kinssim-thumb.svg
+  thumbnail: /assets/images/k-inssim.png
   alt: Illustrative K-InsSim workflow thumbnail
   note: '* Equal contribution (co-first authors).'
 - id: ehr-neurips
@@ -94,7 +94,7 @@
   - name: Edward Choi
     me: false
     equal_contribution: false
-  venue: NeurIPS 2026 · Evaluations & Datasets Track · Accepted
+  venue: NeurIPS 2026 · Evaluations & Datasets Track
   thumbnail: null
   alt: ''
   note: ''
