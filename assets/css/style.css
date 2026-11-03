@@ -346,7 +346,7 @@ footer { font-size:13px; }
 .language-fill {
   display: block;
   height: 100%;
-  background: var(--orange);
+  background: #777E87;
   border-radius: inherit;
 }
 
@@ -373,4 +373,17 @@ footer { font-size:13px; }
 }
 @media (max-width: 440px) {
   .pub .thumb { width: 116px; flex-basis: 116px; }
+}
+
+
+/* Honors & Awards: additional notes */
+.detail-main .detail-note {
+  font-size: 12.5px;
+  color: #858A90;
+}
+
+/* Experience: parent organization */
+.detail-main .affiliation {
+  font-size: 12.5px;
+  color: #858A90;
 }
