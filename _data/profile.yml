@@ -10,8 +10,8 @@ links:
   linkedin: https://www.linkedin.com/in/sangji06/
   advisor: https://www.linkedin.com/in/wonchulcha6597/
 introduction:
-- Hello! I am a <strong>medical AI researcher</strong> at <strong>Samsung Medical Center</strong>. I received my M.S. in Digital Health
-  from Sungkyunkwan University under the supervision of <a class="advisor-link" href="https://smarthealthlab.skku.edu/" rel="noopener
+- Hello! I am a <strong>medical AI researcher</strong> at <a href="https://www.samsunghospital.com/en/" target="_blank" rel="noopener noreferrer"><strong>Samsung Medical Center</strong></a>. I received my M.S. in Digital Health
+  from Sungkyunkwan University under the supervision of <a class="advisor-link" href="https://www.linkedin.com/in/wonchulcha6597/" rel="noopener
   noreferrer" target="_blank"><strong>Prof. Won Chul Cha</strong></a>.
 - My research interests lie in <strong>developing and evaluating AI systems for real-world healthcare workflows.</strong> I am especially
   interested in how AI agents can leverage complex patient information and domain-specific knowledge to support a wide range of healthcare
