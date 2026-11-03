@@ -67,11 +67,56 @@ title: Home
     {% endfor %}
   </section>
 
-  <section class="section concise" id="experience"><h2>Experience</h2>
-    {% for job in site.data.experience %}
-    <div class="detail-line"><div class="detail-main"><strong>{{ job.institution }}</strong><span>{{ job.role }}</span></div><span class="detail-time">{{ job.period }}</span></div>
-    {% endfor %}
-  </section>
+  
+<section class="section concise" id="experience">
+  <h2>Experience</h2>
+
+  {% for job in site.data.experience %}
+  <div class="detail-line">
+    <div class="detail-main">
+
+      <strong>
+        {% if job.institution_url %}
+        <a href="{{ job.institution_url }}" target="_blank" rel="noopener noreferrer">
+          {{ job.institution }}
+        </a>
+        {% else %}
+        {{ job.institution }}
+        {% endif %}
+      </strong>
+
+      <span>{{ job.role }}</span>
+
+      {% if job.department %}
+      <span>
+        {% if job.department_url %}
+        <a href="{{ job.department_url }}" target="_blank" rel="noopener noreferrer">
+          {{ job.department }}
+        </a>
+        {% else %}
+        {{ job.department }}
+        {% endif %}
+      </span>
+      {% endif %}
+
+      {% if job.parent %}
+      <span class="affiliation">
+        {% if job.parent_url %}
+        <a href="{{ job.parent_url }}" target="_blank" rel="noopener noreferrer">
+          {{ job.parent }}
+        </a>
+        {% else %}
+        {{ job.parent }}
+        {% endif %}
+      </span>
+      {% endif %}
+
+    </div>
+    <span class="detail-time">{{ job.period }}</span>
+  </div>
+  {% endfor %}
+</section>
+  
   <section class="section concise" id="education"><h2>Education</h2>
     {% for degree in site.data.education %}
     <div class="detail-line"><div class="detail-main"><strong>{{ degree.institution }}</strong><span>{{ degree.degree }}</span></div><span class="detail-time">{{ degree.period }}</span></div>
