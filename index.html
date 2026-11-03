@@ -122,11 +122,26 @@ title: Home
     <div class="detail-line"><div class="detail-main"><strong>{{ degree.institution }}</strong><span>{{ degree.degree }}</span></div><span class="detail-time">{{ degree.period }}</span></div>
     {% endfor %}
   </section>
-  <section class="section concise" id="honors"><h2>Honors &amp; Awards</h2>
-    {% for honor in site.data.honors %}
-    <div class="detail-line"><div class="detail-main"><strong>{{ honor.award }}</strong><span>{{ honor.issuer }}</span></div><span class="detail-time">{{ honor.year }}</span></div>
-    {% endfor %}
-  </section>
+
+<section class="section concise" id="honors">
+  <h2>Honors &amp; Awards</h2>
+
+  {% for honor in site.data.honors %}
+  <div class="detail-line">
+    <div class="detail-main">
+      <strong>{{ honor.award }}</strong>
+      <span>{{ honor.issuer }}</span>
+
+      {% if honor.note %}
+      <span class="detail-note">{{ honor.note }}</span>
+      {% endif %}
+    </div>
+
+    <span class="detail-time">{{ honor.year }}</span>
+  </div>
+  {% endfor %}
+</section>
+
   <section class="section concise" id="teaching" aria-labelledby="teaching-title">
     <h2 id="teaching-title">Teaching Assistant</h2>
     {% for course in site.data.teaching %}
