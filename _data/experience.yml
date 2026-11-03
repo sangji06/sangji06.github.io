@@ -1,6 +1,15 @@
 - institution: Samsung Medical Center
-  role: Researcher · Healthcare Digital Transformation Research Institute
+  institution_url: https://www.samsunghospital.com/en/
+  role: Researcher
+  department: Healthcare Digital Transformation Research Institute
+  department_url: https://smarthealthlab.skku.edu/
+  parent: Research Institute for Future Medicine
+  parent_url: https://www.samsunghospital.com/en/healthcare-professionals/research/centers-departments.do
   period: Mar 2026 – Present
+
 - institution: Severance Hospital
-  role: Health Information Manager · Department of Medical Records
+  institution_url: https://sev.severance.healthcare/sev-en/index.do
+  role: Health Information Manager
+  department: Department of Medical Records
+  department_url: https://www.severance.healthcare/sev/expert/support/record.do
   period: Mar 2022 – Oct 2023
