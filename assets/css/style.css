@@ -387,3 +387,28 @@ footer { font-size:13px; }
   font-size: 12.5px;
   color: #858A90;
 }
+
+
+/* Visible links in Introduction and Experience */
+.summary a,
+.concise .detail-main a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #BFC3C8;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.summary a:hover,
+.concise .detail-main a:hover {
+  color: var(--orange);
+  text-decoration-color: var(--orange);
+}
+
+
+/* Orange section headings */
+.section > h2,
+.publications-heading > h2 {
+  color: var(--orange);
+}
